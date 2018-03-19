@@ -40,7 +40,9 @@ namespace ProripsClass
                 archivosCargarTableAdapter.CargarArchivos(row[3].ToString(), row[0].ToString(), row[1].ToString());
                 archivosCargarTableAdapter.ActualizarCampoNombreArchivos("temporal.archivo" + row[2].ToString(), row[1].ToString());
             }
-            int numeroArchivos;
+            ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.QueriesTableAdapter queries = new ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.QueriesTableAdapter();
+            queries.spGenerarListaErrores();
+                int numeroArchivos;
             numeroArchivos = archivosCargarDataTable.Count();
         }
         

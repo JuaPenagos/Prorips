@@ -29,9 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInterfaceValidarArchivos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabArchivos = new System.Windows.Forms.TabControl();
             this.tabPageArchivoAC = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPageArchivoAD = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAF = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAH = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAM = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAN = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAP = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAT = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoAU = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoUS = new System.Windows.Forms.TabPage();
+            this.tabPageArchivoCT = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
+            this.btnGuardarCorreciones = new System.Windows.Forms.Button();
+            this.btnExportar = new System.Windows.Forms.Button();
+            this.tabPageErrores = new System.Windows.Forms.TabPage();
+            this.dgvArchivoAC = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoIdentificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,16 +72,15 @@
             this.numValorNetoPagarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.temporalDataset = new ProripsDataset.DatasetOrigin.TemporalDataset();
-            this.tabPageArchivoAD = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAD = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codConceptoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numCantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numValorUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numValorTotalConceptoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAF = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.varRutaDataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvArchivoAF = new System.Windows.Forms.DataGridView();
             this.codPrestadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRazonSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoIdentificacionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,8 +98,8 @@
             this.numValorComisionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numvalorDescuentosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numValorNetoFactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAH = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.varRutaDataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvArchivoAH = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,8 +120,7 @@
             this.fecEgresoUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaEgresoUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAM = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAM = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -117,8 +136,7 @@
             this.numValorUnitarioMedicamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numValorTotalMedicamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAN = new System.Windows.Forms.TabPage();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAN = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionMadreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,8 +152,7 @@
             this.fecMuerteRecienNacidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaMuerteRecienNacidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAP = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAP = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -152,8 +169,7 @@
             this.numFormaActoQuirurgicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorProcedimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAT = new System.Windows.Forms.TabPage();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAT = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServiciosDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -166,8 +182,7 @@
             this.numValorUnitarioMaterialeInsumosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numValorTotalMaterialeseInsumosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoAU = new System.Windows.Forms.TabPage();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoAU = new System.Windows.Forms.DataGridView();
             this.numFacturaDataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codPrestadorServicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varTipoIdentificacionDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -186,50 +201,64 @@
             this.fecSalidaUsuarioObservacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaSalidaUsuarioObservacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoUS = new System.Windows.Forms.TabPage();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoUS = new System.Windows.Forms.DataGridView();
             this.varTipoIdentificacionDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numIdentificacionDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codEntidadAdminDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numTipoUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varApellido1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varApellido2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varNombre1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varNombre2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numEdadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numMedidaEdadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varSexoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codDptoResidenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codMunresidenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varZonaResidenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.varRutaDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageArchivoCT = new System.Windows.Forms.TabPage();
-            this.dataGridView11 = new System.Windows.Forms.DataGridView();
+            this.dgvArchivoCT = new System.Windows.Forms.DataGridView();
             this.codPrestadorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecRemisionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codArchivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numRegistrosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
+            this.varRutaDataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.archivoACTableAdapter = new ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.archivoACTableAdapter();
             this.spValidararchivoACTableAdapter = new ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.spValidararchivoACTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvErrores = new System.Windows.Forms.DataGridView();
+            this.lineaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numFacturaDataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varArchivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varDescripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varRutaDataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabArchivos.SuspendLayout();
             this.tabPageArchivoAC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.temporalDataset)).BeginInit();
             this.tabPageArchivoAD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPageArchivoAF.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPageArchivoAH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPageArchivoAM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPageArchivoAN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPageArchivoAP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.tabPageArchivoAT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPageArchivoAU.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             this.tabPageArchivoUS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             this.tabPageArchivoCT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPageErrores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.temporalDataset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoUS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoCT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).BeginInit();
             this.SuspendLayout();
             // 
             // tabArchivos
@@ -237,6 +266,7 @@
             this.tabArchivos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabArchivos.Controls.Add(this.tabPageErrores);
             this.tabArchivos.Controls.Add(this.tabPageArchivoAC);
             this.tabArchivos.Controls.Add(this.tabPageArchivoAD);
             this.tabArchivos.Controls.Add(this.tabPageArchivoAF);
@@ -248,30 +278,228 @@
             this.tabArchivos.Controls.Add(this.tabPageArchivoAU);
             this.tabArchivos.Controls.Add(this.tabPageArchivoUS);
             this.tabArchivos.Controls.Add(this.tabPageArchivoCT);
-            this.tabArchivos.Location = new System.Drawing.Point(0, 62);
+            this.tabArchivos.Location = new System.Drawing.Point(0, 101);
             this.tabArchivos.Name = "tabArchivos";
             this.tabArchivos.SelectedIndex = 0;
-            this.tabArchivos.Size = new System.Drawing.Size(928, 470);
+            this.tabArchivos.Size = new System.Drawing.Size(928, 431);
             this.tabArchivos.TabIndex = 0;
             this.tabArchivos.Tag = "";
             // 
             // tabPageArchivoAC
             // 
-            this.tabPageArchivoAC.Controls.Add(this.dataGridView1);
+            this.tabPageArchivoAC.Controls.Add(this.dgvArchivoAC);
             this.tabPageArchivoAC.Location = new System.Drawing.Point(4, 22);
             this.tabPageArchivoAC.Name = "tabPageArchivoAC";
             this.tabPageArchivoAC.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAC.Size = new System.Drawing.Size(920, 444);
+            this.tabPageArchivoAC.Size = new System.Drawing.Size(920, 405);
             this.tabPageArchivoAC.TabIndex = 0;
             this.tabPageArchivoAC.Text = "ArchivoAC";
             this.tabPageArchivoAC.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // tabPageArchivoAD
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tabPageArchivoAD.Controls.Add(this.dgvArchivoAD);
+            this.tabPageArchivoAD.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAD.Name = "tabPageArchivoAD";
+            this.tabPageArchivoAD.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAD.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAD.TabIndex = 1;
+            this.tabPageArchivoAD.Text = "ArchivoAD";
+            this.tabPageArchivoAD.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAF
+            // 
+            this.tabPageArchivoAF.Controls.Add(this.dgvArchivoAF);
+            this.tabPageArchivoAF.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAF.Name = "tabPageArchivoAF";
+            this.tabPageArchivoAF.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAF.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAF.TabIndex = 2;
+            this.tabPageArchivoAF.Text = "ArchivoAF";
+            this.tabPageArchivoAF.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAH
+            // 
+            this.tabPageArchivoAH.Controls.Add(this.dgvArchivoAH);
+            this.tabPageArchivoAH.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAH.Name = "tabPageArchivoAH";
+            this.tabPageArchivoAH.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAH.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAH.TabIndex = 3;
+            this.tabPageArchivoAH.Text = "ArchivoAH";
+            this.tabPageArchivoAH.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAM
+            // 
+            this.tabPageArchivoAM.Controls.Add(this.dgvArchivoAM);
+            this.tabPageArchivoAM.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAM.Name = "tabPageArchivoAM";
+            this.tabPageArchivoAM.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAM.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAM.TabIndex = 4;
+            this.tabPageArchivoAM.Text = "ArchivoAM";
+            this.tabPageArchivoAM.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAN
+            // 
+            this.tabPageArchivoAN.Controls.Add(this.dgvArchivoAN);
+            this.tabPageArchivoAN.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAN.Name = "tabPageArchivoAN";
+            this.tabPageArchivoAN.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAN.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAN.TabIndex = 5;
+            this.tabPageArchivoAN.Text = "ArchivoAN";
+            this.tabPageArchivoAN.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAP
+            // 
+            this.tabPageArchivoAP.Controls.Add(this.dgvArchivoAP);
+            this.tabPageArchivoAP.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAP.Name = "tabPageArchivoAP";
+            this.tabPageArchivoAP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAP.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAP.TabIndex = 6;
+            this.tabPageArchivoAP.Text = "ArchivoAP";
+            this.tabPageArchivoAP.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAT
+            // 
+            this.tabPageArchivoAT.Controls.Add(this.dgvArchivoAT);
+            this.tabPageArchivoAT.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAT.Name = "tabPageArchivoAT";
+            this.tabPageArchivoAT.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAT.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAT.TabIndex = 7;
+            this.tabPageArchivoAT.Text = "ArchivoAT";
+            this.tabPageArchivoAT.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoAU
+            // 
+            this.tabPageArchivoAU.Controls.Add(this.dgvArchivoAU);
+            this.tabPageArchivoAU.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoAU.Name = "tabPageArchivoAU";
+            this.tabPageArchivoAU.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoAU.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoAU.TabIndex = 8;
+            this.tabPageArchivoAU.Text = "ArchivoAU";
+            this.tabPageArchivoAU.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoUS
+            // 
+            this.tabPageArchivoUS.Controls.Add(this.dgvArchivoUS);
+            this.tabPageArchivoUS.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoUS.Name = "tabPageArchivoUS";
+            this.tabPageArchivoUS.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoUS.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoUS.TabIndex = 9;
+            this.tabPageArchivoUS.Text = "ArchivoUS";
+            this.tabPageArchivoUS.UseVisualStyleBackColor = true;
+            // 
+            // tabPageArchivoCT
+            // 
+            this.tabPageArchivoCT.Controls.Add(this.dgvArchivoCT);
+            this.tabPageArchivoCT.Location = new System.Drawing.Point(4, 22);
+            this.tabPageArchivoCT.Name = "tabPageArchivoCT";
+            this.tabPageArchivoCT.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageArchivoCT.Size = new System.Drawing.Size(920, 405);
+            this.tabPageArchivoCT.TabIndex = 10;
+            this.tabPageArchivoCT.Text = "ArchivoCT";
+            this.tabPageArchivoCT.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(928, 26);
+            this.panel1.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(15, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 27);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(41, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Resultado Correcciones";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(4, 72);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(35, 13);
+            this.lblError.TabIndex = 11;
+            this.lblError.Text = "label2";
+            // 
+            // btnGuardarCorreciones
+            // 
+            this.btnGuardarCorreciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarCorreciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarCorreciones.BackgroundImage")));
+            this.btnGuardarCorreciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnGuardarCorreciones.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCorreciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCorreciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCorreciones.Location = new System.Drawing.Point(861, 27);
+            this.btnGuardarCorreciones.Name = "btnGuardarCorreciones";
+            this.btnGuardarCorreciones.Size = new System.Drawing.Size(55, 70);
+            this.btnGuardarCorreciones.TabIndex = 13;
+            this.btnGuardarCorreciones.Text = "Guardar";
+            this.btnGuardarCorreciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGuardarCorreciones.UseVisualStyleBackColor = false;
+            this.btnGuardarCorreciones.Click += new System.EventHandler(this.btnGuardarCorreciones_Click);
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExportar.BackgroundImage")));
+            this.btnExportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExportar.Enabled = false;
+            this.btnExportar.FlatAppearance.BorderSize = 0;
+            this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportar.Location = new System.Drawing.Point(800, 27);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(55, 70);
+            this.btnExportar.TabIndex = 16;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // tabPageErrores
+            // 
+            this.tabPageErrores.Controls.Add(this.dgvErrores);
+            this.tabPageErrores.Location = new System.Drawing.Point(4, 22);
+            this.tabPageErrores.Name = "tabPageErrores";
+            this.tabPageErrores.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageErrores.Size = new System.Drawing.Size(920, 405);
+            this.tabPageErrores.TabIndex = 11;
+            this.tabPageErrores.Text = "Errores";
+            this.tabPageErrores.UseVisualStyleBackColor = true;
+            // 
+            // dgvArchivoAC
+            // 
+            this.dgvArchivoAC.AllowUserToAddRows = false;
+            this.dgvArchivoAC.AutoGenerateColumns = false;
+            this.dgvArchivoAC.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dgvArchivoAC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn,
             this.codPrestadorServiciosDataGridViewTextBoxColumn,
             this.tipoIdentificacionDataGridViewTextBoxColumn,
@@ -290,13 +518,22 @@
             this.numValorCuotaModeradoraDataGridViewTextBoxColumn,
             this.numValorNetoPagarDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataMember = "spValidararchivoAC";
-            this.dataGridView1.DataSource = this.temporalDataset;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(914, 438);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvArchivoAC.DataMember = "spValidararchivoAC";
+            this.dgvArchivoAC.DataSource = this.temporalDataset;
+            this.dgvArchivoAC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAC.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAC.Name = "dgvArchivoAC";
+            this.dgvArchivoAC.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArchivoAC.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvArchivoAC.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAC.TabIndex = 0;
             // 
             // numFacturaDataGridViewTextBoxColumn
             // 
@@ -394,12 +631,19 @@
             // numValorConsultaDataGridViewTextBoxColumn
             // 
             this.numValorConsultaDataGridViewTextBoxColumn.DataPropertyName = "numValorConsulta";
+            dataGridViewCellStyle2.Format = "C0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.numValorConsultaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.numValorConsultaDataGridViewTextBoxColumn.HeaderText = "numValorConsulta";
+            this.numValorConsultaDataGridViewTextBoxColumn.MaxInputLength = 20;
             this.numValorConsultaDataGridViewTextBoxColumn.Name = "numValorConsultaDataGridViewTextBoxColumn";
             // 
             // numValorCuotaModeradoraDataGridViewTextBoxColumn
             // 
             this.numValorCuotaModeradoraDataGridViewTextBoxColumn.DataPropertyName = "numValorCuotaModeradora";
+            dataGridViewCellStyle3.Format = "C0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.numValorCuotaModeradoraDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.numValorCuotaModeradoraDataGridViewTextBoxColumn.HeaderText = "numValorCuotaModeradora";
             this.numValorCuotaModeradoraDataGridViewTextBoxColumn.Name = "numValorCuotaModeradoraDataGridViewTextBoxColumn";
             // 
@@ -412,50 +656,44 @@
             // varRutaDataGridViewTextBoxColumn
             // 
             this.varRutaDataGridViewTextBoxColumn.DataPropertyName = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn.FillWeight = 1F;
             this.varRutaDataGridViewTextBoxColumn.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn.Name = "varRutaDataGridViewTextBoxColumn";
-            this.varRutaDataGridViewTextBoxColumn.Visible = false;
+            this.varRutaDataGridViewTextBoxColumn.Width = 2;
             // 
             // temporalDataset
             // 
             this.temporalDataset.DataSetName = "TemporalDataset";
             this.temporalDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tabPageArchivoAD
+            // dgvArchivoAD
             // 
-            this.tabPageArchivoAD.Controls.Add(this.dataGridView2);
-            this.tabPageArchivoAD.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAD.Name = "tabPageArchivoAD";
-            this.tabPageArchivoAD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAD.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAD.TabIndex = 1;
-            this.tabPageArchivoAD.Text = "ArchivoAD";
-            this.tabPageArchivoAD.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAD.AllowUserToAddRows = false;
+            this.dgvArchivoAD.AutoGenerateColumns = false;
+            this.dgvArchivoAD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn1,
             this.codPrestadorServiciosDataGridViewTextBoxColumn1,
             this.codConceptoDataGridViewTextBoxColumn,
             this.numCantidadDataGridViewTextBoxColumn,
             this.numValorUnitarioDataGridViewTextBoxColumn,
-            this.numValorTotalConceptoDataGridViewTextBoxColumn});
-            this.dataGridView2.DataMember = "spValidararchivoAD";
-            this.dataGridView2.DataSource = this.temporalDataset;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView2.TabIndex = 1;
+            this.numValorTotalConceptoDataGridViewTextBoxColumn,
+            this.varRutaDataGridViewTextBoxColumn8});
+            this.dgvArchivoAD.DataMember = "spValidararchivoAD";
+            this.dgvArchivoAD.DataSource = this.temporalDataset;
+            this.dgvArchivoAD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAD.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAD.Name = "dgvArchivoAD";
+            this.dgvArchivoAD.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAD.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn1
             // 
             this.numFacturaDataGridViewTextBoxColumn1.DataPropertyName = "numFactura";
             this.numFacturaDataGridViewTextBoxColumn1.HeaderText = "numFactura";
             this.numFacturaDataGridViewTextBoxColumn1.Name = "numFacturaDataGridViewTextBoxColumn1";
+            this.numFacturaDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // codPrestadorServiciosDataGridViewTextBoxColumn1
             // 
@@ -488,22 +726,22 @@
             this.numValorTotalConceptoDataGridViewTextBoxColumn.HeaderText = "numValorTotalConcepto";
             this.numValorTotalConceptoDataGridViewTextBoxColumn.Name = "numValorTotalConceptoDataGridViewTextBoxColumn";
             // 
-            // tabPageArchivoAF
+            // varRutaDataGridViewTextBoxColumn8
             // 
-            this.tabPageArchivoAF.Controls.Add(this.dataGridView3);
-            this.tabPageArchivoAF.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAF.Name = "tabPageArchivoAF";
-            this.tabPageArchivoAF.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAF.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAF.TabIndex = 2;
-            this.tabPageArchivoAF.Text = "ArchivoAF";
-            this.tabPageArchivoAF.UseVisualStyleBackColor = true;
+            this.varRutaDataGridViewTextBoxColumn8.DataPropertyName = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn8.FillWeight = 1F;
+            this.varRutaDataGridViewTextBoxColumn8.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn8.MinimumWidth = 2;
+            this.varRutaDataGridViewTextBoxColumn8.Name = "varRutaDataGridViewTextBoxColumn8";
+            this.varRutaDataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.varRutaDataGridViewTextBoxColumn8.Width = 2;
             // 
-            // dataGridView3
+            // dgvArchivoAF
             // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAF.AllowUserToAddRows = false;
+            this.dgvArchivoAF.AutoGenerateColumns = false;
+            this.dgvArchivoAF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codPrestadorDataGridViewTextBoxColumn,
             this.varRazonSocialDataGridViewTextBoxColumn,
             this.tipoIdentificacionDataGridViewTextBoxColumn1,
@@ -520,14 +758,15 @@
             this.numCopagoDataGridViewTextBoxColumn,
             this.numValorComisionDataGridViewTextBoxColumn,
             this.numvalorDescuentosDataGridViewTextBoxColumn,
-            this.numValorNetoFactDataGridViewTextBoxColumn});
-            this.dataGridView3.DataMember = "spValidararchivoAF";
-            this.dataGridView3.DataSource = this.temporalDataset;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView3.TabIndex = 1;
+            this.numValorNetoFactDataGridViewTextBoxColumn,
+            this.varRutaDataGridViewTextBoxColumn9});
+            this.dgvArchivoAF.DataMember = "spValidararchivoAF";
+            this.dgvArchivoAF.DataSource = this.temporalDataset;
+            this.dgvArchivoAF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAF.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAF.Name = "dgvArchivoAF";
+            this.dgvArchivoAF.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAF.TabIndex = 1;
             // 
             // codPrestadorDataGridViewTextBoxColumn
             // 
@@ -633,22 +872,20 @@
             this.numValorNetoFactDataGridViewTextBoxColumn.HeaderText = "numValorNetoFact";
             this.numValorNetoFactDataGridViewTextBoxColumn.Name = "numValorNetoFactDataGridViewTextBoxColumn";
             // 
-            // tabPageArchivoAH
+            // varRutaDataGridViewTextBoxColumn9
             // 
-            this.tabPageArchivoAH.Controls.Add(this.dataGridView4);
-            this.tabPageArchivoAH.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAH.Name = "tabPageArchivoAH";
-            this.tabPageArchivoAH.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAH.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAH.TabIndex = 3;
-            this.tabPageArchivoAH.Text = "ArchivoAH";
-            this.tabPageArchivoAH.UseVisualStyleBackColor = true;
+            this.varRutaDataGridViewTextBoxColumn9.DataPropertyName = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn9.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn9.MinimumWidth = 2;
+            this.varRutaDataGridViewTextBoxColumn9.Name = "varRutaDataGridViewTextBoxColumn9";
+            this.varRutaDataGridViewTextBoxColumn9.Width = 2;
             // 
-            // dataGridView4
+            // dgvArchivoAH
             // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAH.AllowUserToAddRows = false;
+            this.dgvArchivoAH.AutoGenerateColumns = false;
+            this.dgvArchivoAH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn3,
             this.codPrestadorServiciosDataGridViewTextBoxColumn2,
             this.varTipoIdentificacionDataGridViewTextBoxColumn,
@@ -669,13 +906,13 @@
             this.fecEgresoUsuarioDataGridViewTextBoxColumn,
             this.horaEgresoUsuarioDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn1});
-            this.dataGridView4.DataMember = "spValidararchivoAH";
-            this.dataGridView4.DataSource = this.temporalDataset;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView4.TabIndex = 1;
+            this.dgvArchivoAH.DataMember = "spValidararchivoAH";
+            this.dgvArchivoAH.DataSource = this.temporalDataset;
+            this.dgvArchivoAH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAH.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAH.Name = "dgvArchivoAH";
+            this.dgvArchivoAH.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAH.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn3
             // 
@@ -806,24 +1043,16 @@
             // 
             this.varRutaDataGridViewTextBoxColumn1.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn1.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn1.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn1.Name = "varRutaDataGridViewTextBoxColumn1";
+            this.varRutaDataGridViewTextBoxColumn1.Width = 2;
             // 
-            // tabPageArchivoAM
+            // dgvArchivoAM
             // 
-            this.tabPageArchivoAM.Controls.Add(this.dataGridView5);
-            this.tabPageArchivoAM.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAM.Name = "tabPageArchivoAM";
-            this.tabPageArchivoAM.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAM.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAM.TabIndex = 4;
-            this.tabPageArchivoAM.Text = "ArchivoAM";
-            this.tabPageArchivoAM.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAM.AllowUserToAddRows = false;
+            this.dgvArchivoAM.AutoGenerateColumns = false;
+            this.dgvArchivoAM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn4,
             this.codPrestadorServiciosDataGridViewTextBoxColumn3,
             this.varTipoIdentificacionDataGridViewTextBoxColumn1,
@@ -839,13 +1068,13 @@
             this.numValorUnitarioMedicamentoDataGridViewTextBoxColumn,
             this.numValorTotalMedicamentoDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn2});
-            this.dataGridView5.DataMember = "spValidararchivoAM";
-            this.dataGridView5.DataSource = this.temporalDataset;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView5.TabIndex = 1;
+            this.dgvArchivoAM.DataMember = "spValidararchivoAM";
+            this.dgvArchivoAM.DataSource = this.temporalDataset;
+            this.dgvArchivoAM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAM.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAM.Name = "dgvArchivoAM";
+            this.dgvArchivoAM.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAM.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn4
             // 
@@ -937,24 +1166,16 @@
             // 
             this.varRutaDataGridViewTextBoxColumn2.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn2.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn2.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn2.Name = "varRutaDataGridViewTextBoxColumn2";
+            this.varRutaDataGridViewTextBoxColumn2.Width = 2;
             // 
-            // tabPageArchivoAN
+            // dgvArchivoAN
             // 
-            this.tabPageArchivoAN.Controls.Add(this.dataGridView6);
-            this.tabPageArchivoAN.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAN.Name = "tabPageArchivoAN";
-            this.tabPageArchivoAN.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAN.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAN.TabIndex = 5;
-            this.tabPageArchivoAN.Text = "ArchivoAN";
-            this.tabPageArchivoAN.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.AutoGenerateColumns = false;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAN.AllowUserToAddRows = false;
+            this.dgvArchivoAN.AutoGenerateColumns = false;
+            this.dgvArchivoAN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn5,
             this.codPrestadorServiciosDataGridViewTextBoxColumn4,
             this.varTipoIdentificacionMadreDataGridViewTextBoxColumn,
@@ -970,13 +1191,13 @@
             this.fecMuerteRecienNacidoDataGridViewTextBoxColumn,
             this.horaMuerteRecienNacidoDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn3});
-            this.dataGridView6.DataMember = "spValidararchivoAN";
-            this.dataGridView6.DataSource = this.temporalDataset;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView6.TabIndex = 1;
+            this.dgvArchivoAN.DataMember = "spValidararchivoAN";
+            this.dgvArchivoAN.DataSource = this.temporalDataset;
+            this.dgvArchivoAN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAN.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAN.Name = "dgvArchivoAN";
+            this.dgvArchivoAN.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAN.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn5
             // 
@@ -1071,24 +1292,16 @@
             // 
             this.varRutaDataGridViewTextBoxColumn3.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn3.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn3.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn3.Name = "varRutaDataGridViewTextBoxColumn3";
+            this.varRutaDataGridViewTextBoxColumn3.Width = 2;
             // 
-            // tabPageArchivoAP
+            // dgvArchivoAP
             // 
-            this.tabPageArchivoAP.Controls.Add(this.dataGridView7);
-            this.tabPageArchivoAP.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAP.Name = "tabPageArchivoAP";
-            this.tabPageArchivoAP.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAP.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAP.TabIndex = 6;
-            this.tabPageArchivoAP.Text = "ArchivoAP";
-            this.tabPageArchivoAP.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.AutoGenerateColumns = false;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAP.AllowUserToAddRows = false;
+            this.dgvArchivoAP.AutoGenerateColumns = false;
+            this.dgvArchivoAP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn6,
             this.codPrestadorServiciosDataGridViewTextBoxColumn5,
             this.varTipoIdentificacionDataGridViewTextBoxColumn2,
@@ -1105,13 +1318,13 @@
             this.numFormaActoQuirurgicoDataGridViewTextBoxColumn,
             this.valorProcedimientoDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn4});
-            this.dataGridView7.DataMember = "spValidararchivoAP";
-            this.dataGridView7.DataSource = this.temporalDataset;
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView7.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView7.TabIndex = 1;
+            this.dgvArchivoAP.DataMember = "spValidararchivoAP";
+            this.dgvArchivoAP.DataSource = this.temporalDataset;
+            this.dgvArchivoAP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAP.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAP.Name = "dgvArchivoAP";
+            this.dgvArchivoAP.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAP.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn6
             // 
@@ -1217,24 +1430,17 @@
             // 
             this.varRutaDataGridViewTextBoxColumn4.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn4.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn4.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn4.Name = "varRutaDataGridViewTextBoxColumn4";
+            this.varRutaDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.varRutaDataGridViewTextBoxColumn4.Width = 2;
             // 
-            // tabPageArchivoAT
+            // dgvArchivoAT
             // 
-            this.tabPageArchivoAT.Controls.Add(this.dataGridView8);
-            this.tabPageArchivoAT.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAT.Name = "tabPageArchivoAT";
-            this.tabPageArchivoAT.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAT.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAT.TabIndex = 7;
-            this.tabPageArchivoAT.Text = "ArchivoAT";
-            this.tabPageArchivoAT.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.AutoGenerateColumns = false;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAT.AllowUserToAddRows = false;
+            this.dgvArchivoAT.AutoGenerateColumns = false;
+            this.dgvArchivoAT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn7,
             this.codPrestadorServiciosDataGridViewTextBoxColumn6,
             this.varTipoIdentificacionDataGridViewTextBoxColumn3,
@@ -1247,13 +1453,13 @@
             this.numValorUnitarioMaterialeInsumosDataGridViewTextBoxColumn,
             this.numValorTotalMaterialeseInsumosDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn5});
-            this.dataGridView8.DataMember = "spValidararchivoAT";
-            this.dataGridView8.DataSource = this.temporalDataset;
-            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView8.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView8.TabIndex = 1;
+            this.dgvArchivoAT.DataMember = "spValidararchivoAT";
+            this.dgvArchivoAT.DataSource = this.temporalDataset;
+            this.dgvArchivoAT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAT.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAT.Name = "dgvArchivoAT";
+            this.dgvArchivoAT.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAT.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn7
             // 
@@ -1327,24 +1533,17 @@
             // 
             this.varRutaDataGridViewTextBoxColumn5.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn5.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn5.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn5.Name = "varRutaDataGridViewTextBoxColumn5";
+            this.varRutaDataGridViewTextBoxColumn5.ReadOnly = true;
+            this.varRutaDataGridViewTextBoxColumn5.Width = 2;
             // 
-            // tabPageArchivoAU
+            // dgvArchivoAU
             // 
-            this.tabPageArchivoAU.Controls.Add(this.dataGridView9);
-            this.tabPageArchivoAU.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoAU.Name = "tabPageArchivoAU";
-            this.tabPageArchivoAU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoAU.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoAU.TabIndex = 8;
-            this.tabPageArchivoAU.Text = "ArchivoAU";
-            this.tabPageArchivoAU.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView9
-            // 
-            this.dataGridView9.AutoGenerateColumns = false;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoAU.AllowUserToAddRows = false;
+            this.dgvArchivoAU.AutoGenerateColumns = false;
+            this.dgvArchivoAU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoAU.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numFacturaDataGridViewTextBoxColumn8,
             this.codPrestadorServicioDataGridViewTextBoxColumn,
             this.varTipoIdentificacionDataGridViewTextBoxColumn4,
@@ -1363,13 +1562,13 @@
             this.fecSalidaUsuarioObservacionDataGridViewTextBoxColumn,
             this.horaSalidaUsuarioObservacionDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn6});
-            this.dataGridView9.DataMember = "spValidararchivoAU";
-            this.dataGridView9.DataSource = this.temporalDataset;
-            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView9.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView9.TabIndex = 1;
+            this.dgvArchivoAU.DataMember = "spValidararchivoAU";
+            this.dgvArchivoAU.DataSource = this.temporalDataset;
+            this.dgvArchivoAU.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoAU.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoAU.Name = "dgvArchivoAU";
+            this.dgvArchivoAU.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoAU.TabIndex = 1;
             // 
             // numFacturaDataGridViewTextBoxColumn8
             // 
@@ -1486,34 +1685,38 @@
             // 
             this.varRutaDataGridViewTextBoxColumn6.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn6.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn6.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn6.Name = "varRutaDataGridViewTextBoxColumn6";
+            this.varRutaDataGridViewTextBoxColumn6.Width = 2;
             // 
-            // tabPageArchivoUS
+            // dgvArchivoUS
             // 
-            this.tabPageArchivoUS.Controls.Add(this.dataGridView10);
-            this.tabPageArchivoUS.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoUS.Name = "tabPageArchivoUS";
-            this.tabPageArchivoUS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoUS.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoUS.TabIndex = 9;
-            this.tabPageArchivoUS.Text = "ArchivoUS";
-            this.tabPageArchivoUS.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView10
-            // 
-            this.dataGridView10.AutoGenerateColumns = false;
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoUS.AllowUserToAddRows = false;
+            this.dgvArchivoUS.AutoGenerateColumns = false;
+            this.dgvArchivoUS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoUS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.varTipoIdentificacionDataGridViewTextBoxColumn5,
             this.numIdentificacionDataGridViewTextBoxColumn7,
+            this.codEntidadAdminDataGridViewTextBoxColumn1,
+            this.numTipoUsuarioDataGridViewTextBoxColumn,
+            this.varApellido1DataGridViewTextBoxColumn,
+            this.varApellido2DataGridViewTextBoxColumn,
+            this.varNombre1DataGridViewTextBoxColumn,
+            this.varNombre2DataGridViewTextBoxColumn,
+            this.numEdadDataGridViewTextBoxColumn,
+            this.numMedidaEdadDataGridViewTextBoxColumn,
+            this.varSexoDataGridViewTextBoxColumn1,
+            this.codDptoResidenciaDataGridViewTextBoxColumn,
+            this.codMunresidenciaDataGridViewTextBoxColumn,
+            this.varZonaResidenciaDataGridViewTextBoxColumn,
             this.varRutaDataGridViewTextBoxColumn7});
-            this.dataGridView10.DataMember = "spValidararchivoUS";
-            this.dataGridView10.DataSource = this.temporalDataset;
-            this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView10.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView10.TabIndex = 1;
+            this.dgvArchivoUS.DataMember = "spValidararchivoUS";
+            this.dgvArchivoUS.DataSource = this.temporalDataset;
+            this.dgvArchivoUS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoUS.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoUS.Name = "dgvArchivoUS";
+            this.dgvArchivoUS.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoUS.TabIndex = 1;
             // 
             // varTipoIdentificacionDataGridViewTextBoxColumn5
             // 
@@ -1528,39 +1731,110 @@
             this.numIdentificacionDataGridViewTextBoxColumn7.HeaderText = "numIdentificacion";
             this.numIdentificacionDataGridViewTextBoxColumn7.Name = "numIdentificacionDataGridViewTextBoxColumn7";
             // 
+            // codEntidadAdminDataGridViewTextBoxColumn1
+            // 
+            this.codEntidadAdminDataGridViewTextBoxColumn1.DataPropertyName = "codEntidadAdmin";
+            this.codEntidadAdminDataGridViewTextBoxColumn1.HeaderText = "codEntidadAdmin";
+            this.codEntidadAdminDataGridViewTextBoxColumn1.Name = "codEntidadAdminDataGridViewTextBoxColumn1";
+            // 
+            // numTipoUsuarioDataGridViewTextBoxColumn
+            // 
+            this.numTipoUsuarioDataGridViewTextBoxColumn.DataPropertyName = "numTipoUsuario";
+            this.numTipoUsuarioDataGridViewTextBoxColumn.HeaderText = "numTipoUsuario";
+            this.numTipoUsuarioDataGridViewTextBoxColumn.Name = "numTipoUsuarioDataGridViewTextBoxColumn";
+            // 
+            // varApellido1DataGridViewTextBoxColumn
+            // 
+            this.varApellido1DataGridViewTextBoxColumn.DataPropertyName = "varApellido1";
+            this.varApellido1DataGridViewTextBoxColumn.HeaderText = "varApellido1";
+            this.varApellido1DataGridViewTextBoxColumn.Name = "varApellido1DataGridViewTextBoxColumn";
+            // 
+            // varApellido2DataGridViewTextBoxColumn
+            // 
+            this.varApellido2DataGridViewTextBoxColumn.DataPropertyName = "varApellido2";
+            this.varApellido2DataGridViewTextBoxColumn.HeaderText = "varApellido2";
+            this.varApellido2DataGridViewTextBoxColumn.Name = "varApellido2DataGridViewTextBoxColumn";
+            // 
+            // varNombre1DataGridViewTextBoxColumn
+            // 
+            this.varNombre1DataGridViewTextBoxColumn.DataPropertyName = "varNombre1";
+            this.varNombre1DataGridViewTextBoxColumn.HeaderText = "varNombre1";
+            this.varNombre1DataGridViewTextBoxColumn.Name = "varNombre1DataGridViewTextBoxColumn";
+            // 
+            // varNombre2DataGridViewTextBoxColumn
+            // 
+            this.varNombre2DataGridViewTextBoxColumn.DataPropertyName = "varNombre2";
+            this.varNombre2DataGridViewTextBoxColumn.HeaderText = "varNombre2";
+            this.varNombre2DataGridViewTextBoxColumn.Name = "varNombre2DataGridViewTextBoxColumn";
+            // 
+            // numEdadDataGridViewTextBoxColumn
+            // 
+            this.numEdadDataGridViewTextBoxColumn.DataPropertyName = "numEdad";
+            this.numEdadDataGridViewTextBoxColumn.HeaderText = "numEdad";
+            this.numEdadDataGridViewTextBoxColumn.Name = "numEdadDataGridViewTextBoxColumn";
+            // 
+            // numMedidaEdadDataGridViewTextBoxColumn
+            // 
+            this.numMedidaEdadDataGridViewTextBoxColumn.DataPropertyName = "numMedidaEdad";
+            this.numMedidaEdadDataGridViewTextBoxColumn.HeaderText = "numMedidaEdad";
+            this.numMedidaEdadDataGridViewTextBoxColumn.Name = "numMedidaEdadDataGridViewTextBoxColumn";
+            this.numMedidaEdadDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // varSexoDataGridViewTextBoxColumn1
+            // 
+            this.varSexoDataGridViewTextBoxColumn1.DataPropertyName = "varSexo";
+            this.varSexoDataGridViewTextBoxColumn1.HeaderText = "varSexo";
+            this.varSexoDataGridViewTextBoxColumn1.Name = "varSexoDataGridViewTextBoxColumn1";
+            this.varSexoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // codDptoResidenciaDataGridViewTextBoxColumn
+            // 
+            this.codDptoResidenciaDataGridViewTextBoxColumn.DataPropertyName = "codDptoResidencia";
+            this.codDptoResidenciaDataGridViewTextBoxColumn.HeaderText = "codDptoResidencia";
+            this.codDptoResidenciaDataGridViewTextBoxColumn.Name = "codDptoResidenciaDataGridViewTextBoxColumn";
+            this.codDptoResidenciaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codMunresidenciaDataGridViewTextBoxColumn
+            // 
+            this.codMunresidenciaDataGridViewTextBoxColumn.DataPropertyName = "codMunresidencia";
+            this.codMunresidenciaDataGridViewTextBoxColumn.HeaderText = "codMunresidencia";
+            this.codMunresidenciaDataGridViewTextBoxColumn.Name = "codMunresidenciaDataGridViewTextBoxColumn";
+            this.codMunresidenciaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // varZonaResidenciaDataGridViewTextBoxColumn
+            // 
+            this.varZonaResidenciaDataGridViewTextBoxColumn.DataPropertyName = "varZonaResidencia";
+            this.varZonaResidenciaDataGridViewTextBoxColumn.HeaderText = "varZonaResidencia";
+            this.varZonaResidenciaDataGridViewTextBoxColumn.Name = "varZonaResidenciaDataGridViewTextBoxColumn";
+            // 
             // varRutaDataGridViewTextBoxColumn7
             // 
             this.varRutaDataGridViewTextBoxColumn7.DataPropertyName = "varRuta";
             this.varRutaDataGridViewTextBoxColumn7.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn7.MinimumWidth = 2;
             this.varRutaDataGridViewTextBoxColumn7.Name = "varRutaDataGridViewTextBoxColumn7";
+            this.varRutaDataGridViewTextBoxColumn7.ReadOnly = true;
+            this.varRutaDataGridViewTextBoxColumn7.Visible = false;
+            this.varRutaDataGridViewTextBoxColumn7.Width = 2;
             // 
-            // tabPageArchivoCT
+            // dgvArchivoCT
             // 
-            this.tabPageArchivoCT.Controls.Add(this.dataGridView11);
-            this.tabPageArchivoCT.Location = new System.Drawing.Point(4, 22);
-            this.tabPageArchivoCT.Name = "tabPageArchivoCT";
-            this.tabPageArchivoCT.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageArchivoCT.Size = new System.Drawing.Size(920, 451);
-            this.tabPageArchivoCT.TabIndex = 10;
-            this.tabPageArchivoCT.Text = "ArchivoCT";
-            this.tabPageArchivoCT.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView11
-            // 
-            this.dataGridView11.AutoGenerateColumns = false;
-            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvArchivoCT.AllowUserToAddRows = false;
+            this.dgvArchivoCT.AutoGenerateColumns = false;
+            this.dgvArchivoCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArchivoCT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codPrestadorDataGridViewTextBoxColumn1,
             this.fecRemisionDataGridViewTextBoxColumn,
             this.codArchivoDataGridViewTextBoxColumn,
-            this.numRegistrosDataGridViewTextBoxColumn});
-            this.dataGridView11.DataMember = "archivoCT";
-            this.dataGridView11.DataSource = this.temporalDataset;
-            this.dataGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView11.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView11.Name = "dataGridView11";
-            this.dataGridView11.Size = new System.Drawing.Size(914, 445);
-            this.dataGridView11.TabIndex = 2;
+            this.numRegistrosDataGridViewTextBoxColumn,
+            this.varRutaDataGridViewTextBoxColumn10});
+            this.dgvArchivoCT.DataMember = "spValidararchivoCT";
+            this.dgvArchivoCT.DataSource = this.temporalDataset;
+            this.dgvArchivoCT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArchivoCT.Location = new System.Drawing.Point(3, 3);
+            this.dgvArchivoCT.Name = "dgvArchivoCT";
+            this.dgvArchivoCT.Size = new System.Drawing.Size(914, 399);
+            this.dgvArchivoCT.TabIndex = 2;
             // 
             // codPrestadorDataGridViewTextBoxColumn1
             // 
@@ -1586,46 +1860,14 @@
             this.numRegistrosDataGridViewTextBoxColumn.HeaderText = "numRegistros";
             this.numRegistrosDataGridViewTextBoxColumn.Name = "numRegistrosDataGridViewTextBoxColumn";
             // 
-            // panel1
+            // varRutaDataGridViewTextBoxColumn10
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(928, 26);
-            this.panel1.TabIndex = 10;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(15, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 27);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(41, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Resultado Correcciones";
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(12, 46);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(35, 13);
-            this.lblError.TabIndex = 11;
-            this.lblError.Text = "label2";
+            this.varRutaDataGridViewTextBoxColumn10.DataPropertyName = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn10.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn10.MinimumWidth = 2;
+            this.varRutaDataGridViewTextBoxColumn10.Name = "varRutaDataGridViewTextBoxColumn10";
+            this.varRutaDataGridViewTextBoxColumn10.ReadOnly = true;
+            this.varRutaDataGridViewTextBoxColumn10.Width = 2;
             // 
             // archivoACTableAdapter
             // 
@@ -1635,15 +1877,66 @@
             // 
             this.spValidararchivoACTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // dgvErrores
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(810, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Guardar Correciones";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dgvErrores.AllowUserToAddRows = false;
+            this.dgvErrores.AutoGenerateColumns = false;
+            this.dgvErrores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dgvErrores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvErrores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineaDataGridViewTextBoxColumn,
+            this.numFacturaDataGridViewTextBoxColumn9,
+            this.varArchivoDataGridViewTextBoxColumn,
+            this.varDescripcionDataGridViewTextBoxColumn,
+            this.varRutaDataGridViewTextBoxColumn11});
+            this.dgvErrores.DataMember = "spSeleccionarErrores";
+            this.dgvErrores.DataSource = this.temporalDataset;
+            this.dgvErrores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvErrores.Location = new System.Drawing.Point(3, 3);
+            this.dgvErrores.Name = "dgvErrores";
+            this.dgvErrores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvErrores.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvErrores.Size = new System.Drawing.Size(914, 399);
+            this.dgvErrores.TabIndex = 1;
+            // 
+            // lineaDataGridViewTextBoxColumn
+            // 
+            this.lineaDataGridViewTextBoxColumn.DataPropertyName = "Linea";
+            this.lineaDataGridViewTextBoxColumn.HeaderText = "Linea";
+            this.lineaDataGridViewTextBoxColumn.Name = "lineaDataGridViewTextBoxColumn";
+            // 
+            // numFacturaDataGridViewTextBoxColumn9
+            // 
+            this.numFacturaDataGridViewTextBoxColumn9.DataPropertyName = "NumFactura";
+            this.numFacturaDataGridViewTextBoxColumn9.HeaderText = "NumFactura";
+            this.numFacturaDataGridViewTextBoxColumn9.Name = "numFacturaDataGridViewTextBoxColumn9";
+            // 
+            // varArchivoDataGridViewTextBoxColumn
+            // 
+            this.varArchivoDataGridViewTextBoxColumn.DataPropertyName = "varArchivo";
+            this.varArchivoDataGridViewTextBoxColumn.HeaderText = "varArchivo";
+            this.varArchivoDataGridViewTextBoxColumn.Name = "varArchivoDataGridViewTextBoxColumn";
+            // 
+            // varDescripcionDataGridViewTextBoxColumn
+            // 
+            this.varDescripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.varDescripcionDataGridViewTextBoxColumn.DataPropertyName = "varDescripcion";
+            this.varDescripcionDataGridViewTextBoxColumn.HeaderText = "varDescripcion";
+            this.varDescripcionDataGridViewTextBoxColumn.Name = "varDescripcionDataGridViewTextBoxColumn";
+            this.varDescripcionDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // varRutaDataGridViewTextBoxColumn11
+            // 
+            this.varRutaDataGridViewTextBoxColumn11.DataPropertyName = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn11.HeaderText = "varRuta";
+            this.varRutaDataGridViewTextBoxColumn11.Name = "varRutaDataGridViewTextBoxColumn11";
             // 
             // frmInterfaceValidarArchivos
             // 
@@ -1652,7 +1945,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(928, 532);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExportar);
+            this.Controls.Add(this.btnGuardarCorreciones);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabArchivos);
@@ -1663,31 +1957,33 @@
             this.Load += new System.EventHandler(this.frmInterfaceValidarArchivos_Load);
             this.tabArchivos.ResumeLayout(false);
             this.tabPageArchivoAC.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.temporalDataset)).EndInit();
             this.tabPageArchivoAD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPageArchivoAF.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPageArchivoAH.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPageArchivoAM.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPageArchivoAN.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPageArchivoAP.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.tabPageArchivoAT.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPageArchivoAU.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             this.tabPageArchivoUS.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             this.tabPageArchivoCT.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPageErrores.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.temporalDataset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoAU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoUS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArchivoCT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvErrores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1697,58 +1993,43 @@
 
         private System.Windows.Forms.TabControl tabArchivos;
         private System.Windows.Forms.TabPage tabPageArchivoAC;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvArchivoAC;
         private System.Windows.Forms.TabPage tabPageArchivoAD;
         private ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.archivoACTableAdapter archivoACTableAdapter;
         private ProripsDataset.DatasetOrigin.TemporalDataset temporalDataset;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvArchivoAD;
         private System.Windows.Forms.TabPage tabPageArchivoAF;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvArchivoAF;
         private System.Windows.Forms.TabPage tabPageArchivoAH;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dgvArchivoAH;
         private System.Windows.Forms.TabPage tabPageArchivoAM;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dgvArchivoAM;
         private System.Windows.Forms.TabPage tabPageArchivoAN;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dgvArchivoAN;
         private System.Windows.Forms.TabPage tabPageArchivoAP;
-        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView dgvArchivoAP;
         private System.Windows.Forms.TabPage tabPageArchivoAT;
-        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridView dgvArchivoAT;
         private System.Windows.Forms.TabPage tabPageArchivoAU;
-        private System.Windows.Forms.DataGridView dataGridView9;
+        private System.Windows.Forms.DataGridView dgvArchivoAU;
         private System.Windows.Forms.TabPage tabPageArchivoUS;
-        private System.Windows.Forms.DataGridView dataGridView10;
+        private System.Windows.Forms.DataGridView dgvArchivoUS;
         private System.Windows.Forms.TabPage tabPageArchivoCT;
-        private System.Windows.Forms.DataGridView dataGridView11;
+        private System.Windows.Forms.DataGridView dgvArchivoCT;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private ProripsDataset.DatasetOrigin.TemporalDatasetTableAdapters.spValidararchivoACTableAdapter spValidararchivoACTableAdapter;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnGuardarCorreciones;
+        private System.Windows.Forms.Button btnExportar;
         private System.Windows.Forms.DataGridViewTextBoxColumn numFacturaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorServiciosDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codConceptoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numCantidadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numValorUnitarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numValorTotalConceptoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numFacturaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorServiciosDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoIdentificacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numIdentificacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecConsultaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numAutorizacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codConsultaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numFinalidadConsultaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numCausaExternaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoPrincipalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado3DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numTipoDiagnosticoPrincipalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numValorConsultaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numValorCuotaModeradoraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numValorNetoPagarDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn varRazonSocialDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoIdentificacionDataGridViewTextBoxColumn1;
@@ -1766,6 +2047,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn numValorComisionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numvalorDescuentosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numValorNetoFactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn numFacturaDataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorServiciosDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn varTipoIdentificacionDataGridViewTextBoxColumn;
@@ -1864,11 +2146,48 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn varTipoIdentificacionDataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn numIdentificacionDataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codEntidadAdminDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numTipoUsuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varApellido1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varApellido2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varNombre1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varNombre2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numEdadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numMedidaEdadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varSexoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codDptoResidenciaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codMunresidenciaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varZonaResidenciaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecRemisionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codArchivoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numRegistrosDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numFacturaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codPrestadorServiciosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoIdentificacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numIdentificacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecConsultaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numAutorizacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codConsultaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numFinalidadConsultaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numCausaExternaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoPrincipalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codDiagnosticoRelacionado3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numTipoDiagnosticoPrincipalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numValorConsultaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numValorCuotaModeradoraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numValorNetoPagarDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabPage tabPageErrores;
+        private System.Windows.Forms.DataGridView dgvErrores;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lineaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numFacturaDataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varArchivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varDescripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn varRutaDataGridViewTextBoxColumn11;
     }
 }
